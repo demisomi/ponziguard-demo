@@ -1,0 +1,18 @@
+text,label,language,notes,stage2_pred,stage2_score,correct,error,category
+GTBank has announced new savings rates effective Monday. Visit your nearest branch or use the GTWorld app for more information.,legitimate,english,Legit bank update,ponzi_related,0.9977620840072632,False,True,FINANCIAL_LEGIT
+Reminder: Your Opay card expires next month. Please visit the app to request a replacement at no charge. Customer support: 0700-OPAY.,legitimate,english,Legit fintech notice,ponzi_related,0.9845795631408693,False,True,OTHER
+Join our free webinar this Saturday on personal finance basics. Hosted by CFA-certified speakers. Register at webinar.ng/signup.,legitimate,english,Legit webinar,ponzi_related,0.9958129525184632,False,True,OTHER
+"Kuda Bank is hosting a financial literacy workshop for university students in Lagos on Friday. Free entry, register on our website.",legitimate,english,Legit workshop,ponzi_related,0.9382709860801696,False,True,FINANCIAL_LEGIT
+SEC Nigeria warns the public against unregistered investment platforms. Always verify before investing. Full list at sec.gov.ng.,legitimate,english,SEC warning,ponzi_related,0.9882405996322632,False,True,WARNING_MISREAD
+Palmpay customers can now withdraw at over 50000 agent locations nationwide. Learn more in the Palmpay app or visit our website.,legitimate,english,Legit fintech update,ponzi_related,0.999451220035553,False,True,OTHER
+"Our mutual fund posted a 12% annual return last year, in line with the NSE index. Past performance does not guarantee future results.",legitimate,english,Legit mutual fund,ponzi_related,0.9912153482437134,False,True,FINANCIAL_LEGIT
+"Today's stock market summary: NGX All-Share Index closed at 98,432 points, up 0.4% from yesterday. Banking sector led gains.",legitimate,english,Legit market report,ponzi_related,0.905974507331848,False,True,FINANCIAL_LEGIT
+"If you wan invest, try SEC-registered platforms like Cowrywise or ARM. Slow money na better pass fast scam.",legitimate,pidgin,Pidgin legit recommendation,ponzi_related,0.9989786148071288,False,True,OTHER
+SBI ne naye fixed deposit rates announce kiye hain. Senior citizens ke liye 7.5% interest milega. Nearest branch visit karein.,legitimate,hindi,Hindi legit bank,ponzi_related,0.9989114999771118,False,True,FINANCIAL_LEGIT
+"Aaj share bazaar me Nifty 50 24,200 par band hua. Banking aur IT sector me achha performance dikha.",legitimate,hindi,Hindi market report,ponzi_related,0.9959542751312256,False,True,FINANCIAL_LEGIT
+RBI ki nayi guidelines ke anusaar UPI transactions par koi extra charge nahi lagega. Personal accounts safe hain.,legitimate,hindi,Hindi RBI update,ponzi_related,0.995799958705902,False,True,WARNING_MISREAD
+Dost investment shuru karne se pehle SEBI registered advisor se baat karo. Koi bhi scheme jo high return guarantee kare usse bacho.,legitimate,hindi,Hindi safety advice,ponzi_related,0.9994693398475648,False,True,WARNING_MISREAD
+BCA meluncurkan fitur baru di myBCA untuk pembayaran pajak langsung dari aplikasi. Gratis untuk semua nasabah.,legitimate,indonesian,Indonesian bank update,ponzi_related,0.9953578114509584,False,True,OTHER
+Jangan tergiur iming-iming investasi bodong! Selalu cek legalitas di situs OJK sebelum berinvestasi.,legitimate,indonesian,Indonesian scam warning,ponzi_related,0.9973480701446532,False,True,WARNING_MISREAD
+"Hello! Your electricity bill for this month is ₦8,450. Pay before the 15th to avoid disconnection. Use the NEPA mobile app.",legitimate,english,Utility bill,ponzi_related,0.9613655805587769,False,True,OTHER
+"Bhai yeh article padho — India me top 5 mutual funds ke baare me achhi jaankari hai. No promotion, just information.",legitimate,hindi,Hindi article share,ponzi_related,0.9994533658027648,False,True,FINANCIAL_LEGIT
