@@ -133,7 +133,7 @@ Per-language recall: 100% across all four languages.
 This is a **pilot implementation** of the production framework specified
 in Chapter 3. Pilot substitutions:
 
-| Component | Chapter 3 (Production) | Pilot (This Repo) |
+| Component | Chapter 3 (Production) | Methodology Test Implementation(This Repo) |
 |---|---|---|
 | Stage 1 | L1 logistic regression, 220 features | 100-term keyword filter |
 | Stage 2 | 4-transformer ensemble (XLM-R-Large + AfroXLMR + IndicBERT + mT5+LoRA) | Single DistilBERT multilingual |
@@ -154,14 +154,11 @@ If you use this work, please cite:
 
 ```
 Somide, O. (2026). PonziGuard: A Generalizable, Real-Time Detector of
-Social-Media Ponzi Schemes. Final Year Project, Department of Computer
-and Information Sciences, Pan-Atlantic University.
+Social-Media Ponzi Schemes. Final Year Project, Department of Computer, Pan-Atlantic University.
 ```
 
 ---
 
 ## Acknowledgments
-
-- Supervisor: Dr Taiwo Amoo, Pan-Atlantic University
 - HuggingFace for hosting the base datasets
 - The Streamlit team for the dashboard framework
