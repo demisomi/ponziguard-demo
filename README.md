@@ -112,7 +112,7 @@ Total corpus: ~15,000 messages, balanced 47% ponzi_related / 53% legitimate.
 
 ## Key Results
 
-### Primary Evaluation (held-out test set, n=967)
+### Primary Evaluation (held-out test set, n=3,002)
 
 | Configuration | Precision | Recall | F1 Score |
 |---|---|---|---|
