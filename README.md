@@ -18,9 +18,11 @@ framework defended in Chapters 1–3 of the project thesis.
 The cascade architecture:
 
 1. **Stage 1 — UltraFast Filter**: keyword-density gate (recall-optimised)
-2. **Stage 2 — Multilingual Deep Analyzer**: fine-tuned DistilBERT multilingual classifier
+2. **Stage 2 — Multilingual Deep Analyzer**: fine-tuned XLM-RoBERTa-base
 3. **Stage 2.5 — Investment-Fraud Sub-Filter**: distinguishes investment scams from general fraud
 4. **Stage 3 — Structured Red-Flag Reasoner**: 12 weighted rule categories with risk scoring
+
+<img width="1700" height="1800" alt="methodology_flowchart" src="https://github.com/user-attachments/assets/e52239ea-48d6-4c31-8f00-4d6ebf4c6682" />
 
 
 
@@ -50,7 +52,7 @@ pip install -r requirements.txt
 python combine_datasets.py
 python build_final_corpus.py
 
-# 2. Fine-tune Stage 2 (DistilBERT multilingual)
+# 2. Fine-tune Stage 2 (XLM-RoBERTa-base)
 python stage2_finetune.py
 
 # 3. Run Stage 3 rule reasoner
@@ -75,7 +77,7 @@ PonziGuard/
 ├── app.py                              Streamlit dashboard (5 tabs)
 ├── combine_datasets.py                 Builds expanded HuggingFace corpus
 ├── build_final_corpus.py               Merges synthetic + regulator data
-├── stage2_finetune.py                  Fine-tunes DistilBERT
+├── stage2_finetune.py                  Fine-tunes XLM-RoBERTa-base
 ├── stage3.py                           Runs rule reasoner v2
 ├── evaluate_curated.py                 Evaluates on curated multilingual set
 ├── evaluate_curated_cascade.py         Evaluates full cascade
@@ -85,7 +87,7 @@ PonziGuard/
 ├── telegram_data.csv                   Combined training corpus (~15k messages)
 ├── stage2_finetuned_results.csv        Stage 2 evaluation output
 ├── stage3_alerts.csv                   Stage 3 structured alerts
-├── ponzi_model/                        Fine-tuned DistilBERT weights
+├── ponzi_model/                        Fine-tuned XLM-RoBERTa-base weights
 ├── requirements.txt                    Python dependencies
 └── README.md
 ```
@@ -116,7 +118,7 @@ Total corpus: ~15,000 messages, balanced 47% ponzi_related / 53% legitimate.
 |---|---|---|---|
 | Stage 1 (keyword filter) | 53.77% | 98.14% | 69.47% |
 | Stage 2 zero-shot XLM-R | 54.42% | 17.66% | 26.67% |
-| **Stage 2 fine-tuned DistilBERT** | **96.48%** | **97.82%** | **97.15%** |
+| **Stage 2 fine-tuned XLM-RoBERTa-base** | **96.48%** | **97.82%** | **97.15%** |
 
 ### Curated Multilingual Evaluation (n=60)
 
@@ -138,7 +140,7 @@ in Chapter 3. Pilot substitutions:
 | Component | Chapter 3 (Production) | Methodology Test Implementation(This Repo) |
 |---|---|---|
 | Stage 1 | L1 logistic regression, 220 features | 100-term keyword filter |
-| Stage 2 | 4-transformer ensemble (XLM-R-Large + AfroXLMR + IndicBERT + mT5+LoRA) | Single DistilBERT multilingual |
+| Stage 2 | 4-transformer ensemble (XLM-R-Large + AfroXLMR + IndicBERT + mT5+LoRA) | Single XLM-RoBERTa-base multilingual |
 | Stage 3 | 15-marker neural reasoner, per-country calibration | 12 weighted rule categories |
 | Corpus | 58,214 regulator-verified posts | ~15,000 multi-source messages |
 | Infrastructure | 64 A100 GPUs | Single CPU workstation |
