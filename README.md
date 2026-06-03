@@ -22,7 +22,6 @@ The cascade architecture:
 3. **Stage 2.5 — Investment-Fraud Sub-Filter**: distinguishes investment scams from general fraud
 4. **Stage 3 — Structured Red-Flag Reasoner**: 12 weighted rule categories with risk scoring
 
-   <img width="1700" height="1800" alt="image" src="https://github.com/user-attachments/assets/276bbbc2-b0f6-49da-bf5e-4d37893e9e35" />
 
 
 ---
